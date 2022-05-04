@@ -63,7 +63,7 @@ int board[9][9] = {
     {emp, emp, emp, emp, emp, emp, emp, emp, emp},
     {emp, emp, emp, emp, emp, emp, emp, emp, emp},
     {emp, emp, emp, emp, emp, emp, emp, emp, emp},
-    {sfu, sfu, sfu, sfu, sfu, sfu, sfu, sfu, emp},
+    {sfu, sfu, sfu, sfu, sfu, sfu, sfu, sfu, sfu},
     {emp, ska, emp, emp, emp, emp, emp, shi, emp},
     {sky, ske, sgi, ski, sgy, ski, sgi, ske, sky},
 };
