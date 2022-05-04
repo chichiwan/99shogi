@@ -289,7 +289,7 @@ void keTobi(int i, int j, int s) {
             }
         }
     }
-    
+
     if(board[i][j] < 0) {
         if(i+2 <= 9) {
         	flag = 0;
@@ -848,7 +848,7 @@ void op() {
         b = (x % 1000) /100;
         c = (x % 100) / 10;
         d = x % 10;
-        
+
         b -= 1;
         d -= 1;
 		while(f == 0) {
@@ -870,7 +870,7 @@ void op() {
         i = d;
         j = c;
         ekoma(i, j);
-        
+
         board[d][c] = komaOp(koma);
         board[b][a] = 0;
     }else {
@@ -878,10 +878,10 @@ void op() {
         b = (x % 1000) /100;
         c = (x % 100) / 10;
         d = x % 10;
-        
+
         b -= 1;
         d -= 1;
-        
+
         e = 0;
         f = 0;
         while(f == 0) {
@@ -891,11 +891,11 @@ void op() {
             }
             e++;
         }
-        
+
         i = d;
         j = c;
         ekoma(i, j);
-        
+
         board[d][c] = komaOp(koma);
     }
 
@@ -996,7 +996,7 @@ void sop() {
 				cout<<endl<<"White >"<<9-a<<b+1<<9-c<<d+1<<moKoma<<endl;
 				board[d][c] = board[b][a];
 				board[b][a] = 0;
-				
+
 				//wc++;
 				fl++;
 			}else if(komate[r-100].empty() == 0){
@@ -1030,7 +1030,7 @@ void sop() {
 					break;
 				}*/
 				string moKoma = komate[r].erase(0, 4);
-	
+
 				cout<<endl<<"White >"<<"M"<<"+"<<9-c<<d+1<<moKoma<<endl;
 				if(moKoma == "FU") { // or while
 					for(int i = 0; i < 40; i++) {
@@ -1049,12 +1049,12 @@ void sop() {
 						}
 					}
 					board[d][c] = ski;
-				}			
-			
+				}
+
 				//wc++;
 				fl++;
 			}
-			
+
 		}
 
 	}
@@ -1444,7 +1444,7 @@ void Koma() {
 			tsumeSkomaJ++;
 		}
 	}
-	
+
 	for(int i = 0; i < 40; i++) {
 		sKoma[i] = "";
 	}
@@ -1470,7 +1470,7 @@ void Koma() {
 									}
 								}
 								komate[kc] = to_string(9000 + 10 * j + i) + sKoma[n];
-								flag++; 
+								flag++;
 							}
 							if(kc > 560) {
 								flag++;
@@ -1501,7 +1501,7 @@ void ekoma() {
 			etsumeSkomaJ++;
 		}
 	}
-	
+
 	for(int i = 0; i < 40; i++) {
 		eKoma[i] = "";
 	}
@@ -1527,7 +1527,7 @@ void ekoma() {
 									}
 								}
 								ekomate[kc] = to_string(9000 + 10 * j + i) + eKoma[n];
-								flag++; 
+								flag++;
 							}
 							if(kc > 560) {
 								flag++;
@@ -1688,7 +1688,7 @@ void twentyfour() {
 		if(ete[i].empty() == 0) {
 			new_ete[tfJ] = ete[i];
 			tfJ++;
-		}  
+		}
 	}
 
 	for(int i = 0; i < 100; i++) {
@@ -1702,7 +1702,7 @@ void twentyfour() {
 		if(new_ete[i].empty() == 0) {
 			ete[tfJ] = new_ete[i];
 			tfJ++;
-		}  
+		}
 	}
 
 	for(int i = 0; i < 100; i++) {
@@ -1762,10 +1762,10 @@ int main() {
         		b = (x % 1000) /100;
         		c = (x % 100) / 10;
        			d = x % 10;
-        
+
        			b -= 1;
        			d -= 1;
-       
+
         		e = 0;
         		f = 0;
        			while(f == 0) {
@@ -1775,7 +1775,7 @@ int main() {
            			}
            			e++;
        			}
-        
+
         		i = d;
         		j = c;
 
@@ -1801,10 +1801,10 @@ int main() {
         		b = (x % 1000) /100;
         		c = (x % 100) / 10;
         		d = x % 10;
-        
+
         		b -= 1;
         		d -= 1;
-        
+
         		e = 0;
         		f = 0;
         		while(f == 0) {
@@ -1814,7 +1814,7 @@ int main() {
             		}
             		e++;
         		}
-        
+
         		i = d;
         		j = c;
 
@@ -1836,15 +1836,15 @@ int main() {
 				x = stoi(ete[nr-1].substr(0, 4));
 				koma = ete[nr-1].substr(4, 5);
 
-	
+
         			a = x / 1000;
         			b = (x % 1000) /100;
         			c = (x % 100) / 10;
         			d = x % 10;
-        
+
         			b -= 1;
         			d -= 1;
-        
+
         			e = 0;
         			f = 0;
         			while(f == 0) {
@@ -1854,16 +1854,16 @@ int main() {
             			}
             			e++;
         			}
-        
+
         			i = d;
         			j = c;
 
         			//a += 9-a;
         			//b += 2;
         			//d += 2;
-        			
+
     			//}
-        		
+
 
 				cout<<setw(3)<<nr<<"."<<9-a<<b+2<<c<<d+2<<koma<<" ";
 				if(nr % 9 == 0) {
@@ -1887,10 +1887,10 @@ int main() {
         		b = (x % 1000) /100;
         		c = (x % 100) / 10;
         		d = x % 10;
-        
+
         		b -= 1;
         		d -= 1;
-        
+
         		e = 0;
         		f = 0;
         		while(f == 0) {
@@ -1900,7 +1900,7 @@ int main() {
             		}
             		e++;
         		}
-        
+
         		i = d;
         		j = c;
 
